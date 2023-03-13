@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2e049fd46f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+    <title>ZipLocator</title>
+</head>
+
+<body>
+    <div class="main-box">
+        <div id="black">
+            <div id="icon">
+                <div class="halfcircle">
+                    <i class="fa-solid fa-location-dot" style="font-size: 40px; margin: 5px 5px;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="user-input">
+            <h1>Zip code App</h1>
+            <p id="def">view details of a location by providing zipcode</p>
+            <input id="zipcode" type="text" placeholder="ZIP CODE" autofocus>
+            <button id="btn-look">LookUP Zipcode</button>
+        </div>
+
+
+        <div class="user-output" style="display: none;">
+            <h2 style="color: blue;">ZipCode Details</h2>
+            <div>
+                <p>City:
+                    <span id="city"></span>
+                </p>
+                <span id="pin"></span>
+            </div>
+            <div id="dashboard">
+                <div>
+                    <p>District:</p>
+                    <span id="dist"></span>
+                </div>
+                <div>
+                    <p>State:</p>
+                    <span id="state"></span>
+                </div>
+                <div>
+                    <p>Longitide & latitude:</p>
+                    <span id="longi"></span> &
+                    <span id="lati"></span>
+                </div>
+            </div>
+            <button id="diff-btn">check another zipcode</button>
+        </div>
+        <div id="err" style="display: none; margin-top: 100px;">
+            <h1 style="color: red; ">Zipcode is not found</h1>
+            <button id="err-btn" style="margin-left: 5rem;">check another zipcode</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
